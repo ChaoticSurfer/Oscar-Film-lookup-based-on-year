@@ -17,5 +17,5 @@ def get_film_year(inp):
     for i in l:
         if inp in i.text:
             name = i.select_one("a").text
-            res += name
+            res += f"{name}  "
     return res
